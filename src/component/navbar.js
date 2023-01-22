@@ -130,10 +130,9 @@ export default function PrimarySearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1, color:'white' }}>
       <AppBar position="absolute" color = 'transparent'>
-        <Toolbar>
-          
+        <Toolbar sx = {{height:80, size:30}}>
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}

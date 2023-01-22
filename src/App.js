@@ -9,8 +9,11 @@ function App() {
       <Navbar/>
       <div className="app">
         <header className="App-header">
-          <p>
-            In your Venture, With our IVC.
+          <p className='mainslogun'>
+            In your Venture, 
+          </p>
+          <p className='mainslogun1'>
+            With our IVC.
           </p>
         </header>
       </div>
