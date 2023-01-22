@@ -1,4 +1,9 @@
 
+@font-face{
+  font-family: 'SUIT Variable';
+  src:url('../public/SUIT-Variable-ttf/SUIT-Variable.ttf' );
+}
+
 .App {
   text-align: center;
 }
@@ -52,7 +57,10 @@
 }
 
 .mainslogun1{
-  font-size:90px;
+  font-size:100px;
+  font-family : 'SUIT Variable';
+  font-weight:1000;
+
   margin-top:-20px;
 
   justify-content:left;
@@ -63,7 +71,9 @@
 }
 
 .mainslogun{
-  font-size:45px;
+  font-size:50px;
+  font-family : 'SUIT Variable';
+  font-weight : 1000;
 
   justify-content:left;
   align-items:center;
@@ -81,7 +91,9 @@
       transform: translate3d(0, 100%, 0);
   }
   100%{
-    font-size:90px;
+    font-size:100px;
+    font-family : 'SUIT Variable';
+    font-weight : 1000;
     margin-top:-20px;
     opacity:1;
   
@@ -96,7 +108,9 @@
       opacity:0;
   }
   100%{
-    font-size:45px;
+    font-size:50px;
+    font-family : 'SUIT Variable';
+    font-weight : 1000;
 
     justify-content:left;
     align-items:center;
