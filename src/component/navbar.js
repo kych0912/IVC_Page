@@ -17,6 +17,8 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import Image from "../image/LOGO1.png"
 import './navbar.css';
+import { Link } from '@mui/material';
+import Drawer from './drawer';
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
@@ -33,73 +35,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function PrimarySearchAppBar() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      
-
-    </Menu>
-  );
-
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -112,66 +47,65 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1, color:'white' }}>
       <AppBar position="fixed" color = {scrollPosition < 100 ? 'transparent': ''}>
         <Toolbar sx = {{height:80, size:30}}>
-        <Typography
-                variant="h4"
-                noWrap
-                component="div"
-                sx={{ display: { xs: 'none', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
-            >
+            <Link underline="none" color="inherit" href="/">
+              <Typography
+                  variant="h4"
+                  noWrap
+                  component="div"
+                  sx={{ display: { xs: 'none', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
+              >
                 Inha Venture Club
-            </Typography>
-            <Typography
-                variant="h4"
-                noWrap
-                component="div"
-                sx={{ display: { xs: 'block', sm: 'none' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
-            >
-                IVC
-            </Typography>
+              </Typography>
+            </Link>
+            <Link underline="none" color="inherit" href="/">
+              <Typography
+                  variant="h4"
+                  noWrap
+                  component="div"
+                  sx={{ display: { xs: 'block', sm: 'none' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
+              >
+                  IVC
+              </Typography>
+            </Link>
 
           <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+              <Link underline="none" color="inherit" href="/Press">
                 <Typography
                 variant="h4"
                 noWrap
                 component="div"
                 sx={{ display: { xs: 'block', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
-            >
-                언론 속 인하벤처클럽
-            </Typography>
-            <Typography
-                variant="h4"
-                noWrap
-                component="div"
-                sx={{ display: { xs: 'block', sm: 'block' } ,pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
-            >
-                문의하기
-            </Typography>
-            <Typography
-                variant="h4"
-                noWrap
-                component="div"
-                sx={{ display: { xs: 'block', sm: 'block' },pr:5 ,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
-            >
-                신입부원 모집
-            </Typography>
+                >
+                  언론 속 인하벤처클럽
+                </Typography>
+             </Link>
+             <Link underline="none" color="inherit" href="/FAQ">
+                <Typography
+                    variant="h4"
+                    noWrap
+                    component="div"
+                    sx={{ display: { xs: 'block', sm: 'block' } ,pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
+                >
+                    문의하기
+                </Typography>
+              </Link>
+              <Link underline="none" color="inherit" href="/Recruit">
+                <Typography
+                    variant="h4"
+                    noWrap
+                    component="div"
+                    sx={{ display: { xs: 'block', sm: 'block' },pr:5 ,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
+                >
+                    신입부원 모집
+                </Typography>
+              </Link>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
+            <Drawer/>
           </Box>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
     </Box>
   );
 }
