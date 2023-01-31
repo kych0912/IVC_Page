@@ -31,7 +31,7 @@ export default function Main(){
           </p>
         </header>
 
-        <Container sx={{display:'flex',alignItems:'center',justifyContent:'center',width:'100%'}}>
+        <Container sx={{display:'flex',alignItems:'center',justifyContent:'center',width:'1080px'}}>
             <Box sx={{flexDirection:'column',display:'flex', width:'1300px',alignItems:'center',justifyContent:'center'}}>
                 <Typography color='white'sx={{ justifyContent:'center',fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8,fontSize:30}}>
                     인하벤처클럽은,
