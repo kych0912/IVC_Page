@@ -31,7 +31,7 @@ export default function Main(){
           </p>
         </header>
 
-        <Container sx={{display:'flex',alignItems:'center',justifyContent:'center',width:'1080px'}}>
+        <Container sx={{display:'flex',alignItems:'center',justifyContent:'center',minWidth:'500px'}}>
             <Box sx={{flexDirection:'column',display:'flex', width:'1300px',alignItems:'center',justifyContent:'center'}}>
                 <Typography color='white'sx={{ justifyContent:'center',fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8,fontSize:30}}>
                     인하벤처클럽은,
@@ -121,15 +121,17 @@ export default function Main(){
                     </Typography>
 
                 <Box sx={{display:'flex', maxWidth:'750px',justifyContent:'center'}}>
-                    <Typography color='white' fontSize={{xs:28, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8}}>
+                    <Typography color='white' fontSize={{xs:25, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8}}>
                         당신의 모험에 항상 IVC가 있기를
                     </Typography>
                 </Box>
                 <Box sx={{pb:10 ,px:10,pt:7}}>
                     <Button variant="contained" color="inherit" size="large" sx={{px:6, py:3}}>
-                        <Typography fontSize={{xs: 25, md: 25}} color='black'sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
-                            지원하기
-                        </Typography>
+                        <Link underline="none" color="inherit" href="/Recruit">
+                            <Typography fontSize={{xs: 20, md: 25}} color='black'sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
+                                지원하기
+                            </Typography>
+                        </Link>
                     </Button>
                 </Box>
             </Box>
