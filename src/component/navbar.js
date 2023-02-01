@@ -45,8 +45,8 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1, color:'white' }}>
-      <AppBar position="fixed" color = {scrollPosition < 100 ? 'transparent': ''}>
-        <Toolbar sx = {{height:80, size:30}}>
+      <AppBar width="100%" position="fixed" color = {scrollPosition < 100 ? 'transparent': ''} >
+        <Toolbar sx = {{height:70, size:30}}>
             <Link underline="none" color="inherit" href="/">
               <Typography
                   variant="h4"
@@ -77,7 +77,7 @@ export default function PrimarySearchAppBar() {
                 component="div"
                 sx={{ display: { xs: 'block', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
                 >
-                  언론 속 인하벤처클럽
+                  Press
                 </Typography>
              </Link>
              <Link underline="none" color="inherit" href="/FAQ">
@@ -87,7 +87,7 @@ export default function PrimarySearchAppBar() {
                     component="div"
                     sx={{ display: { xs: 'block', sm: 'block' } ,pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
                 >
-                    문의하기
+                    Contact
                 </Typography>
               </Link>
               <Link underline="none" color="inherit" href="/Recruit">
@@ -97,7 +97,7 @@ export default function PrimarySearchAppBar() {
                     component="div"
                     sx={{ display: { xs: 'block', sm: 'block' },pr:5 ,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
                 >
-                    신입부원 모집
+                    Recruit
                 </Typography>
               </Link>
           </Box>

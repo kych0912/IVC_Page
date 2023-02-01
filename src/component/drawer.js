@@ -49,7 +49,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List sx={{backgroundColor:"gray"}}>
-        {['언론 속 인하벤처클럽', '문의하기', '신입부원 모집'].map((text, index) => (
+        {['Press', 'Contact', 'Recruit'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
             <Link underline="none" color="inherit" href={link[index]}>
