@@ -39,9 +39,9 @@ export default function Main(){
         component="footer"
         sx={{
           display:'flex',
+          width:'100%',
           justifyContent:'space-between',
           py: 3,
-          px: 2,
           mt: 'auto',
           backgroundColor: (theme) =>
             theme.palette.mode === 'light'
@@ -56,7 +56,7 @@ export default function Main(){
           <Copyright />
         </Container>
 
-        <Container maxWidth="sm" sx={{display:'flex', justifyContent:'end',alignItems:'center'}}>
+        <Container maxWidth="sm" sx={{display:'flex', justifyContent:'end',alignItems:'center',px:0}}>
             <Link color="inherit" href="https://www.instagram.com/ivc_inha/?hl=ko">
                 <BsInstagram size='27' className='logo'/>
             </Link>

@@ -21,7 +21,7 @@ function App() {
           <Route path="/FAQ" element={<Faq/>}/>
           <Route path="/recruit" element={<Recruit/>}/>
         </Routes>
-      <Footer/>
+        <Footer/>
     </BrowserRouter>
   );
 }

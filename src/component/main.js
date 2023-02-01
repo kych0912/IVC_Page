@@ -21,7 +21,7 @@ const cards = [1, 2, 3];
 
 export default function Main(){
     return(
-        <Box sx={{textAlign:'center',backgroundColor:'black',minWidth:'400px'}}>
+        <Box sx={{textAlign:'center',backgroundColor:'black',width:'100%'}}>
             <header className="App-header">
             <p className='mainslogun'>
                 IN your VENture, 
@@ -31,7 +31,7 @@ export default function Main(){
             </p>
             </header>
 
-            <Container sx={{display:'flex',alignItems:'center',justifyContent:'center',minWidth:'200px'}}>
+            <Container sx={{display:'flex',alignItems:'center',justifyContent:'center'}}>
                 <Box sx={{flexDirection:'column',display:'flex',alignItems:'center',justifyContent:'center'}}>
                     <Typography color='white'sx={{ justifyContent:'center',fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8,fontSize:30}}>
                         인하벤처클럽은,
@@ -78,12 +78,12 @@ export default function Main(){
             </Container>
 
             <Container sx={{display:'flex',alignItems:'center',justifyContent:'center'}}>
-                <Box sx={{flexDirection:'column',display:'flex', width:'1300px',alignItems:'center',justifyContent:'center'}}>
+                <Box sx={{flexDirection:'column',display:'flex',alignItems:'center',justifyContent:'center'}}>
                     <Typography color='white'sx={{ justifyContent:'center',fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8,fontSize:30}}>
                         주요 활동
                     </Typography>
                     <Box>
-                    <Container sx={{ py: 5  }} maxWidth="lg">
+                    <Container sx={{ py: 5  }} >
                             {/* End hero unit */}
                             <Grid container px={5} py={5} width='100%'>
                                 {cards.map((card) => (
@@ -115,7 +115,7 @@ export default function Main(){
             </Container>
 
             <Container sx={{display:'flex',alignItems:'center',justifyContent:'center'}}>
-                <Box sx={{flexDirection:'column',display:'flex', width:'600px',alignItems:'center',justifyContent:'center'}}>
+                <Box sx={{flexDirection:'column',display:'flex',alignItems:'center',justifyContent:'center'}}>
                         <Typography fontSize={{xs: 25, md: 25}} color='white'sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8,fontSize:30}}>
                             신입부원 모집
                         </Typography>
