@@ -13,62 +13,64 @@ import MailIcon from '@mui/icons-material/Mail';
 import { Typography } from '@mui/material';
 import {AiOutlineMenu} from 'react-icons/ai'
 import {Link} from '@mui/material';
+import { useNavigate } from "react-router-dom";
 
 const link = ['/Press','/FAQ','/Recruit'];
 
 export default function TemporaryDrawer() {
+    
 
     const [scrollPosition, setScrollPosition] = useState(0);
-  const updateScroll = () => {
-    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-  }
-  useEffect(()=>{
+    const updateScroll = () => {
+        setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+    }
+    useEffect(()=>{
         window.addEventListener('scroll', updateScroll);
     });
 
-  const [state, setState] = React.useState({
-    'top': false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
+    const [state, setState] = React.useState({
+        'top': false,
+        left: false,
+        bottom: false,
+        right: false,
+    });
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
+    const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+            return;
+        }
 
-    setState({ ...state, [anchor]: open });
-  };
+        setState({ ...state, [anchor]: open });
+    };
 
-  const list = (anchor) => (
-    <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List sx={{backgroundColor:"gray"}}>
-        {['Press', 'Contact', 'Recruit'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-            <Link underline="none" color="inherit" href={link[index]}>
-                <Typography
-                    variant="h4"
-                    noWrap
-                    component="div"
-                    color ="white"
-                    sx={{ display: { xs: 'block', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
-                >
-                    {text}
-                </Typography>
-            </Link>
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
+    const list = (anchor) => (
+        <Box
+        sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+        role="presentation"
+        onClick={toggleDrawer(anchor, false)}
+        onKeyDown={toggleDrawer(anchor, false)}
+        >
+        <List sx={{backgroundColor:"gray"}}>
+            {['Media', 'Contact', 'Recruit'].map((text, index) => (
+            <ListItem key={text} disablePadding>
+                <ListItemButton >
+                    <Link underline="none" color="inherit" sx={{width:"100%"}} href={link[index]}>
+                        <Typography
+                            variant="h4"
+                            noWrap
+                            component="div"
+                            color ="white"
+                            sx={{ display: { xs: 'block', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",width:'100%'}}
+                        >
+                            {text}
+                        </Typography>
+                    </Link>
+                </ListItemButton>
+            </ListItem>
+            ))}
+        </List>
+        </Box>
+    );
 
   return (
     <div>
