@@ -77,7 +77,7 @@ export default function PrimarySearchAppBar() {
                 component="div"
                 sx={{ display: { xs: 'block', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
                 >
-                  Press
+                  Media
                 </Typography>
              </Link>
              <Link underline="none" color="inherit" href="/FAQ">
