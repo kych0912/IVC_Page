@@ -22,7 +22,8 @@ const cards = ["https://ivcpageimg.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Pho
                 , "https://ivcpageimg.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Photo_2022-12-18-17-25-45+005.jpeg"];
 
 const cards_title = ["정기 총회 및 네트워킹","10만원 프로젝트","우린 스타트업"];
-const cards_content = ["창업에 대한 기본적인 지식 학습 및 실행하는 과정","10만원 예산 내에서 최고의 성과를 내기위해 경쟁","린 스타트업에 대해 학습 및 실행하는 과정"];
+const cards_content = ["창업에 대한 기본적인","10만원 예산 내에서","린 스타트업에 대해 학습,"];
+const cards_content1 = ["지식 학습 및 실행하는 과정","최고의 성과를 내기위해 경쟁"," 그리고 실전창업"];
 
 export default function Main(){
     return(
@@ -115,6 +116,9 @@ export default function Main(){
                                         </Typography>
                                         <Typography sx={{ fontSize:18 ,justifyContent:'center',fontFamily:'  Variable',fontWeight:"bold",alignItems:'center'}}>
                                             {cards_content[index]}  
+                                        </Typography>
+                                        <Typography sx={{ fontSize:18 ,justifyContent:'center',fontFamily:'  Variable',fontWeight:"bold",alignItems:'center'}}>
+                                            {cards_content1[index]}  
                                         </Typography>
                                     </CardContent>
                                     </Card>
