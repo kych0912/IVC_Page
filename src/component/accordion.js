@@ -39,7 +39,7 @@ export default function SimpleAccordion() {
             활동 기간은 한 학기입니다!
             </Typography>
             <Typography color="black" sx={{fontSize:{xs:13,md:20},fontFamily:'GmarketSansMedium'}}>
-            1학기에 지원하셨다면 03~07월 까지 활동하게 됩니다.
+            1학기에 지원하셨다면 03~06월 까지 활동하게 됩니다.
             </Typography>
             <Typography color="black" sx={{fontSize:{xs:13,md:20},fontFamily:'GmarketSansMedium'}}>
             2학기에 지원하셨다면 09~12월 까지 활동하게 됩니다.

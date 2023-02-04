@@ -30,7 +30,7 @@ export default function Main(){
                 </Box>
                 <Box sx={{display:'flex'}}>
                     <Box sx={{pr:{xs:3,md:5}}}>
-                        <Link underline="none" color="inherit" href="https://ivcresume.s3.ap-northeast-2.amazonaws.com/%EC%9D%B8%ED%95%98%EB%B2%A4%EC%B2%98%ED%81%B4%EB%9F%BD+27%EA%B8%B0+%EC%A7%80%EC%9B%90%EC%84%9C.docx">
+                        <Link underline="none" color="inherit" href="https://ivcresume.s3.ap-northeast-2.amazonaws.com/%EC%9D%B8%ED%95%98%EB%B2%A4%EC%B2%98%ED%81%B4%EB%9F%BD%2B27%EA%B8%B0%2B%EC%A7%80%EC%9B%90%EC%84%9C.docx">
                             <Button sx={{border:1,color:'white',padding:2}}>
                                 <Typography color="white" sx={{fontSize:{xs:20,md:30},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                                     지원서 다운로드
