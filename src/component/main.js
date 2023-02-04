@@ -75,7 +75,7 @@ export default function Main(){
                                     <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
                                         전통이 있는 동아리
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:8, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
                                         1997년 조현정 회장님에 의해 설립
                                     </Typography>
                                 </Box>
@@ -83,15 +83,18 @@ export default function Main(){
                                     <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
                                         창업에 강한 동아리
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:8, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
                                         매년 3팀 이상의 창업
                                     </Typography>
                                 </Box>
                                 <Box>
                                     <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
-                                        능력있는 사람들의 모임
+                                        능력있는 사람들의
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:8   , md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
+                                        모임
+                                    </Typography>
+                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
                                         2022년 20개 이상의 수상
                                     </Typography>
                                 </Box>
