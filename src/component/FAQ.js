@@ -7,26 +7,26 @@ export default function Main(){
         <Box sx={{ width:'100%',backgroundColor:'black'}}>
           <Box sx={{display:'flex',justifyContent:'start',alignItems:'start',flexDirection:'column',pt:15}}>
             <Box sx={{pb:5}}>
-              <Typography color="white" sx={{fontSize:50,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+              <Typography color="white" sx={{fontSize:40,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                 Email
               </Typography>
-              <Typography color="white" sx={{fontSize:30,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                kyt031522@inha.edu
+              <Typography color="white" sx={{fontSize:20,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                inha.venture.club@gmail.com
               </Typography>
             </Box>
             <Box sx={{pb:5}}>
-              <Typography color="white" sx={{fontSize:50,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+              <Typography color="white" sx={{fontSize:40,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                 Instagram
               </Typography>
-              <Typography color="white" sx={{fontSize:30,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+              <Typography color="white" sx={{fontSize:20,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                 @ivc_inha
               </Typography>
             </Box>
             <Box sx={{pb:5}}> 
-              <Typography color="white" sx={{fontSize:50,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+              <Typography color="white" sx={{fontSize:40,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                 KakaoTalk
               </Typography>
-              <Typography color="white" sx={{fontSize:30,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+              <Typography color="white" sx={{fontSize:20,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                 준비중...
               </Typography>
             </Box>

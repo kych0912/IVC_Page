@@ -15,7 +15,7 @@ export default function Main(){
                         <Box sx={{display:'flex',justifyContent:'center',py:{xs:3,md:5},alignItems:'center',borderTop:1,borderColor:'white'}}>
                             <Box sx={{justifyContent:'center',width:'30%'}}>
                                 <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
-                                    뉴스
+                                    NEWS
                                 </Typography>
                             </Box>
                             <Box sx={{width:'100%'}}>
@@ -30,7 +30,7 @@ export default function Main(){
                         <Box sx={{display:'flex',justifyContent:'center',py:{xs:3,md:5},alignItems:'center',borderTop:1,borderColor:'white'}}>
                             <Box sx={{justifyContent:'center',width:'30%'}}>
                                 <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
-                                    유튜브
+                                    YOUTUBE
                                 </Typography>
                             </Box>
                             <Box sx={{width:'100%'}}>
@@ -45,7 +45,7 @@ export default function Main(){
                         <Box sx={{display:'flex',justifyContent:'center',py:{xs:3,md:5},alignItems:'center',borderTop:1,borderColor:'white'}}>
                             <Box sx={{justifyContent:'center',width:'30%'}}>
                                 <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
-                                    유튜브
+                                    YOUTUBE
                                 </Typography>
                             </Box>
                             <Box sx={{width:'100%'}}>
@@ -60,7 +60,7 @@ export default function Main(){
                         <Box sx={{display:'flex',justifyContent:'center',py:{xs:3,md:5},alignItems:'center',borderTop:1,borderColor:'white'}}>
                             <Box sx={{justifyContent:'center',width:'30%'}}>
                                 <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
-                                    뉴스
+                                    NEWS
                                 </Typography>
                             </Box>
                             <Box sx={{width:'100%'}}>
@@ -75,7 +75,7 @@ export default function Main(){
                         <Box sx={{display:'flex',justifyContent:'center',py:{xs:3,md:5},alignItems:'center',borderTop:1,borderColor:'white'}}>
                             <Box sx={{justifyContent:'center',width:'30%'}}>
                                 <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
-                                    뉴스
+                                    NEWS
                                 </Typography>
                             </Box>
                             <Box sx={{width:'100%'}}>
@@ -90,7 +90,7 @@ export default function Main(){
                         <Box sx={{display:'flex',justifyContent:'center',py:{xs:3,md:5},alignItems:'center',borderTop:1,borderColor:'white'}}>
                             <Box sx={{justifyContent:'center',width:'30%'}}>
                                 <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
-                                    뉴스
+                                    NEWS
                                 </Typography>
                             </Box>
                             <Box sx={{width:'100%'}}>

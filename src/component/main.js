@@ -15,6 +15,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useNavigate } from "react-router-dom";
 
 
 const cards = ["https://ivcpageimg.s3.ap-northeast-2.amazonaws.com/KakaoTalk_Photo_2022-12-18-17-09-30+025.jpeg"
@@ -26,46 +27,55 @@ const cards_content = ["창업에 대한 기본적인","10만원 예산 내에�
 const cards_content1 = ["지식 학습 및 실행하는 과정","최고의 성과를 내기위해 경쟁"," 그리고 실전창업"];
 
 export default function Main(){
+    const navigate = useNavigate();
+    
+    const onRecruitHandler = () =>{
+        navigate("/Recruit")
+    }
+
     return(
         <Box sx={{textAlign:'center',backgroundColor:'black',width:'100%'}}>
             <header className="App-header">
-            <p className='mainslogun'>
-                IN your VENture, 
-            </p>
-            <p className='mainslogun1'>
-                With our IVC.
-            </p>
+                <p className='mainslogun'>
+                    IN your VENture, 
+                </p>
+                <p className='mainslogun1'>
+                    With our IVC
+                </p>
             </header>
 
             <Container sx={{display:'flex',alignItems:'center',justifyContent:'center'}}>
                 <Box sx={{flexDirection:'column',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
-                    <Typography color='white'sx={{ justifyContent:'center',fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8,fontSize:30}}>
+                    <Typography color='white'sx={{ justifyContent:'center',fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', py:2,fontSize:30}}>
                         인하벤처클럽은,
                     </Typography>
-                    <Container sx={{width:'100%',height:'80vh',minHeight:'80vh'}}>
+                    <Container sx={{width:'100%',height:'80vh',minHeight:'60vh'}}>
                         <Box sx={{display:'flex', justifyContent:'space-between',alignItems:'center',flexDirection:'row',height:'60vh'}}>
-                            <Box sx={{display:'flex',justifyContent:'center',height:'100%',width:'100%',alignItems:'center',flexDirection:'column',borderRight:1,borderColor:'white',pr:{xs:2,md:5}}}>
-                                <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:8}}>
-                                    인하대학교 대표 창업 동아리
+                            <Box sx={{display:'flex',justifyContent:'center',height:'80%',width:'100%',alignItems:'center',flexDirection:'column',borderRight:1,borderColor:'white',pr:{xs:2,md:5}}}>
+                                <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
+                                    인하대학교 대표
+                                </Typography>
+                                <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
+                                    창업동아리
                                 </Typography>
                                 <Box sx={{pt:8}}>
                                     <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
                                         창업지원단 소속,
                                     </Typography>
                                     <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center',pt:1.5}}>
-                                        인하대학교 직속
+                                        인하대학교 직할
                                     </Typography>
                                     <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center',pt:1.5}}>
                                         창업동아리
                                     </Typography>
                                 </Box>
                             </Box>
-                            <Box sx={{display:'flex',justifyContent:'center',height:'100%',width:'100%',alignItems:'center',flexDirection:'column',pt:5,pl:{xs:2,md:5}}}>
+                            <Box sx={{display:'flex',justifyContent:'center',height:'100%',width:'100%',alignItems:'center',flexDirection:'column',pl:{xs:2,md:5}}}>
                                 <Box>
                                     <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
                                         전통이 있는 동아리
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:8, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
                                         1997년 조현정 회장님에 의해 설립
                                     </Typography>
                                 </Box>
@@ -73,7 +83,7 @@ export default function Main(){
                                     <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
                                         창업에 강한 동아리
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:8, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
                                         매년 3팀 이상의 창업
                                     </Typography>
                                 </Box>
@@ -81,8 +91,8 @@ export default function Main(){
                                     <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
                                         능력있는 사람들의 모임
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
-                                        2022년 10개 이상의 수상
+                                    <Typography color='white' fontSize={{xs:8   , md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
+                                        2022년 20개 이상의 수상
                                     </Typography>
                                 </Box>
                             </Box>
@@ -155,13 +165,13 @@ export default function Main(){
                         </Box>
                     </Box>
                     <Box sx={{pb:10 ,px:10,pt:7}}>
-                        <Button variant="contained" color="inherit" size="large" sx={{px:6, py:3}}>
-                            <Link underline="none" color="inherit" href="/Recruit">
+                        <Link underline="none" color="inherit" href={"/Recruit"}>
+                            <Button variant="contained" color="inherit" size="large" sx={{px:6, py:3}}>
                                 <Typography fontSize={{xs: 20, md: 25}} color='black'sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
                                     지원하기
                                 </Typography>
-                            </Link>
-                        </Button>
+                            </Button>
+                        </Link>
                     </Box>
                 </Box>
             </Container>

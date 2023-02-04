@@ -57,10 +57,13 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
             <Typography color="black" sx={{fontSize:{xs:13,md:20},fontFamily:'GmarketSansMedium'}}>
-                일반회원의 한 학기 회비는 30,000원 입니다!
+                부회원의 한 학기 회비는 50,000원 입니다
             </Typography>
             <Typography color="black" sx={{fontSize:{xs:13,md:20},fontFamily:'GmarketSansMedium'}}>
-                명예회원 회비는 10,000원입니다!
+                정회원의 한 학기 회비는 30,000원 입니다
+            </Typography>
+            <Typography color="black" sx={{fontSize:{xs:13,md:20},fontFamily:'GmarketSansMedium'}}>
+                명예회원 회비는 10,000원입니다
             </Typography>
         </AccordionDetails>
       </Accordion>

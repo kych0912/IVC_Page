@@ -13,12 +13,10 @@ import MailIcon from '@mui/icons-material/Mail';
 import { Typography } from '@mui/material';
 import {AiOutlineMenu} from 'react-icons/ai'
 import {Link} from '@mui/material';
-import { useNavigate } from "react-router-dom";
 
 const link = ['/Press','/FAQ','/Recruit'];
 
 export default function TemporaryDrawer() {
-    
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const updateScroll = () => {
