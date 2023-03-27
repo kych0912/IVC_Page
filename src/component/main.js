@@ -45,13 +45,13 @@ export default function Main(){
             </header>
 
             <Container sx={{display:'flex',alignItems:'center',justifyContent:'center'}}>
-                <Box sx={{flexDirection:'column',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+                <Box sx={{flexDirection:'column',display:'flex',alignItems:'center',justifyContent:'space-between',width:'100%'}}>
                     <Typography color='white'sx={{ justifyContent:'center',fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', py:2,fontSize:30}}>
                         인하벤처클럽은,
                     </Typography>
                     <Container sx={{width:'100%',height:'80vh',minHeight:'60vh'}}>
                         <Box sx={{display:'flex', justifyContent:'space-between',alignItems:'center',flexDirection:'row',height:'60vh'}}>
-                            <Box sx={{display:'flex',justifyContent:'center',height:'80%',width:'100%',alignItems:'center',flexDirection:'column',borderRight:1,borderColor:'white',pr:{xs:2,md:5}}}>
+                            <Box sx={{display:'flex',justifyContent:'center',height:'80%',width:'100%',alignItems:'center',flexDirection:'column',borderRight:1,borderColor:'white'}}>
                                 <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
                                     인하대학교 대표
                                 </Typography>
@@ -60,7 +60,7 @@ export default function Main(){
                                 </Typography>
                                 <Box sx={{pt:8}}>
                                     <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
-                                        창업지원단 소속,
+                                        창업지원단 소속
                                     </Typography>
                                     <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center',pt:1.5}}>
                                         인하대학교 직할
@@ -70,31 +70,31 @@ export default function Main(){
                                     </Typography>
                                 </Box>
                             </Box>
-                            <Box sx={{display:'flex',justifyContent:'center',height:'100%',width:'100%',alignItems:'center',flexDirection:'column',pl:{xs:2,md:5}}}>
+                            <Box sx={{display:'flex',justifyContent:'center',height:'100%',width:'100%',alignItems:'center',flexDirection:'column',pl:{xs:1}}}>
                                 <Box>
-                                    <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:5}}>
                                         전통이 있는 동아리
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:10, md:17}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:1}}>
                                         1997년 조현정 회장님에 의해 설립
                                     </Typography>
                                 </Box>
                                 <Box>
-                                    <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:5}}>
                                         창업에 강한 동아리
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:10, md:17}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:1}}>
                                         매년 3팀 이상의 창업
                                     </Typography>
                                 </Box>
                                 <Box>
-                                    <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center', pt:5}}>
                                         능력있는 사람들의
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:13, md:25}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
+                                    <Typography color='white' fontSize={{xs:15, md:30}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',fontWeight:"bold",alignItems:'center'}}>
                                         모임
                                     </Typography>
-                                    <Typography color='white' fontSize={{xs:10, md:20}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:3}}>
+                                    <Typography color='white' fontSize={{xs:10, md:17}} sx={{ justifyContent:'center',fontFamily:'SUIT Variable',alignItems:'center', pt:1}}>
                                         2022년 20개 이상의 수상
                                     </Typography>
                                 </Box>
